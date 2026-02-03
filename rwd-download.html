@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!--Usar listas en este caso, no hace falta-->
+    <!--Topbar (no puede ser header, mejor div)-->
     <header class="header">
       <div class="header__title">My Website</div>
       <nav>
@@ -24,15 +26,17 @@
       </nav>
     </header>
 
+    <!--Mejor meter un section y organizar las card en varios articulos. El aside mejor fuera del main-->
     <main>
       <article>
-        <h1>This is the main heading</h1>
-        <p>
+        <!--Esto deberia ir en el header, fuera del main-->
+        <h1 class="header_title_corrected">This is the main heading</h1>
+        <p class="header_subtitle_corrected">
           Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
           onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
         </p>
 
-        <p>
+        <p class="header_subtitle_corrected">
           Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot
           courgette tatsoi pea sprouts fava bean collard greens dandelion okra
           wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
@@ -96,3 +100,9 @@
     </main>
   </body>
 </html>
+
+<!-- Correcciones
+ 1-El topbar no tiene que ir dentro del header (si eso que sea un div), puede ser un componente independiente, y los links dentro del nav
+ 2-El header deberia ser el encabezado (titulo + subtitulo), siendo h1 -> header__title y p -> header__subtitlepor ejemplo
+ 3-El main en este caso puede no ser necesario, y cada card seria un article. Si la web fuera mas larga si q convendria poner un main
+ 4-Por lo que entiendo, una card es un contenedor con información. Si sirviera principalmente para redirigir a otro sitio seri article, si no seran meramente cards, pero para este caso las card pueden ser article-->

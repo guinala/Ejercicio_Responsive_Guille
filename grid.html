@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Grid Exercise</title>
+  </head>
+  <style>
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    .grid
+    {
+        display: flex;
+        width: 1200px;
+        height: 50px;
+        align-items: stretch;
+        margin-bottom: 15px;
+        border: 4px solid purple;
+    }
+
+    .grid-push-right > *:last-child
+    {
+        margin-left: auto;
+    }
+
+    .justify
+    {
+        padding: 6px;
+        background-color: aqua;
+    }
+
+    .grid-1
+    {
+        flex: 0 0 100px;
+    }
+
+    .grid-2
+    {
+        flex: 0 0 200px;
+    }
+
+    .grid-3
+    {
+        flex: 0 0 300px;
+    }
+
+    .grid-6
+    {
+        flex: 0 0 600px;
+    }
+
+    .grid-4
+    {
+        flex: 0 0 400px;
+    }
+
+    .grid-8
+    {
+        flex: 0 0 800px;
+    }
+
+    .red
+    {
+        background-color: red;
+    }
+
+    .yellow
+    {
+        background-color: brown;
+    }
+
+    .blue
+    {
+        background-color: blue;
+    }
+
+    .chocolate
+    {
+        background-color: chocolate;
+    }
+
+    .yellowgreen
+    {
+        background-color: yellowgreen;
+    }
+
+    .orange
+    {
+        background-color: orange;
+    }
+
+    .black
+    {
+        background-color: black;
+    }
+  </style>
+  <body>
+    <div class="grid">
+        <div class="grid-1 red"></div>
+        <div class="grid-1 chocolate"></div>
+        <div class="grid-1 orange"></div>
+        <div class="grid-1 yellowgreen"></div>
+        <div class="grid-1 blue"></div>
+        <div class="grid-1 yellow"></div>
+        <div class="grid-6 black"></div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-2 red"></div>
+        <div class="grid-2 chocolate"></div>
+        <div class="grid-2 orange"></div>
+        <div class="grid-6 black"></div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-4 red"></div>
+        <div class="grid-8 black"></div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-6 red"></div>
+        <div class="grid-6 black"></div>
+    </div>
+
+    <div class="grid justify">
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+        <div class="grid-1 red"></div>
+    </div>
+  </body>
+</html>
